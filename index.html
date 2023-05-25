@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<style>
+    .nav-item{
+        font-size:  28px;
+        color: #444444;
+    }
+</style>
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+            <ul class="navbar-nav d-flex ms-auto px-2">
+                <li class="navbar-item"><a href="#" class="text-white px-2">logout</a></li>
+                <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                    Menu
+                  </a>
+                  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Admin Dashboard</h5>
+                      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="">
+                            <a href="#" class="nav-item">Home</a><br>
+                            <a href="#" class="nav-item mt-3">About</a><br>
+                            <a href="#" class="nav-item mt-3">Contact</a><br>
+                            <a href="#" class="nav-item mt-3">Result</a><br>
+                            <a href="#" class="nav-item mt-3">Setting</a><br>     
+                        </div>
+                    </div>
+                  </div>
+            </ul>
+        </div>
+    </nav>
+
+    <!--Cards-->
+    <main class="mt-2">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3>Admin DashBoard</h3>
+                </div>
+            </div>
+    
+            <!--1st Card-->
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card bg-primary py-4">
+                        <div class="card-body text-center text-white">
+                            <h3>Number of student's</h3>
+                            <h1>52</h1>
+                        </div>
+                    </div>
+                </div>
+
+                <!--2nd card-->
+                <div class="col-md-3">
+                    <div class="card bg-warning py-4">
+                        <div class="card-body text-center text-white">
+                            <h3>Number of Tests</h3>
+                            <h1>10</h1>
+                        </div>
+                    </div>
+                </div>
+
+                <!--3rd card-->
+                <div class="col-md-3">
+                    <div class="card bg-success py-4">
+                        <div class="card-body text-center text-white">
+                            <h3>Passed student's</h3>
+                            <h1>36</h1>
+                        </div>
+                    </div>
+                </div>
+
+                <!--4th card-->
+                <div class="col-md-3">
+                    <div class="card bg-danger py-4">
+                        <div class="card-body text-center text-white">
+                            <h3>Failed Student's</h3>
+                            <h1>16</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Tables-->
+        <div class="row px-2 py-3">
+            <div class="container-fluid">   
+                <div class="col-md-12">
+                    <div class="card bg-white">
+                        <div class="card-header">
+                            <h3>Students Information</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-stripped table-bordered">
+                                    <thead>
+                                        <th>Sr.No</th>
+                                        <th>Name</th>
+                                        <th>Test</th>
+                                        <th>Mark</th>
+                                        <th>status</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Vyankatesh Khetri</td>
+                                            <td>CPP</td>
+                                            <td>89</td>
+                                            <td><span class="text-success">Pass</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Pavan Holge</td>
+                                            <td>Java</td>
+                                            <td>34</td>
+                                            <td><span class="text-danger">Fail</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Prerana Patil</td>
+                                            <td>CPP</td>
+                                            <td>89</td>
+                                            <td><span class="text-success">Pass</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>Harshad Khalate</td>
+                                            <td>SQL</td>
+                                            <td>89</td>
+                                            <td><span class="text-success">Pass</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>Kshitij Kumar</td>
+                                            <td>Java</td>
+                                            <td>30</td>
+                                            <td><span class="text-danger">Pass</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="card-footer text-center">
+                            <p>copyright@2023 vyankatesh_khetri</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+    </main>
+
+
+
+</body>
+</html>
